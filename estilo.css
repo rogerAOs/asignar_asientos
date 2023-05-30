@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Sawarabi+Gothic&display=swap');
+:root{
+    --blue:#82AAE3;
+    --green:#91D8E4;
+}
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Sawarabi Gothic', sans-serif;
+    background-image: url("https://fondosmil.com/fondo/7377.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+table{
+    border: 1px solid white;
+    background-color: #ffffff;
+}
+h1{
+    letter-spacing: 1px;
+    color:  #121f3d;
+    text-align: center;
+    font-weight: bold;
+    text-shadow: 0 0 6px white,0 0 6px white,0 0 6px white,0 0 6px white;
+}
+.title td{
+    font-size: 17px;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    text-shadow: 0 0 5px rgb(255, 255, 255),0 0 5px rgb(255, 255, 255),0 0 5px rgb(255, 255, 255),0 0 5px rgb(255, 255, 255),0 0 5px rgb(255, 255, 255);
+
+}
+.title td img{
+    width: 15px;
+    filter: invert(1);
+    padding: 0 3px;
+}
+td{
+    background-color: #121f3d;
+    border: 1px solid white;
+    font-weight: 100;
+    color: rgb(0, 142, 137);
+    /* text-shadow: 0 0 1px white,0 0 1px white; */
+    font-size: 14px;
+    padding: 7px;
+}
+.alumno{
+    color: rgb(0, 142, 137);
+    text-align: center;
+}
+.contenedor-tabla{
+    display: grid;
+    height: 100vh;
+    place-items: center;
+}
+#generarAsientos{
+    width: 100%;
+    padding: 3px;
+    border-radius: 5px;
+    border: none;
+    margin: 20px 0;
+    font-family: 'Sawarabi Gothic', sans-serif;
+    color: #121f3d;
+    font-weight: bold;
+    font-size: 16px;
+    background-color: rgb(0, 174, 255);
+    cursor: pointer;
+    text-shadow: 0 0 3px var(--blue);
+    letter-spacing: 1px;
+
+}
+#generarAsientos:hover{
+    box-shadow: 0 0 6px  rgb(0, 174, 255) ;
+}
+
+i {
+    display: flex;
+    flex-direction: column-reverse;
+    position: absolute;
+    background: rgb(255, 255, 255);
+    border-radius: 50%;
+    box-shadow: 0px 0px 19px 0px rgb(152, 198, 255);
+    box-shadow: inset 0 -1px 1px rgb(152, 198, 204);
+    top: -17px;
+    animation: nieve linear infinite;
+}
+
+
+@keyframes nieve {
+    0% {
+        top: -17px;
+    }
+    100% {
+        top: calc(100vh + 50px);
+    }
+}
